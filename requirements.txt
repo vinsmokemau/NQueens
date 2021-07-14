@@ -1,0 +1,6 @@
+# DataBase
+psycopg2==2.9.1
+SQLAlchemy==1.4.20
+
+# Testing
+pytest==6.2.4

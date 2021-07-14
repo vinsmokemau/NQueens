@@ -27,3 +27,14 @@ class TestNQueens(unittest.TestCase):
 
     def test_8_queen(self):
         self.assertEqual(NQueens(8).solutions, 92)
+
+    def test_9_queen(self):
+        self.assertEqual(NQueens(8).solutions, 352)
+
+    def test_10_queen(self):
+        self.assertEqual(NQueens(8).solutions, 724)
+
+    def test_float_size(self):
+        n_queen = NQueens(8.5)
+        self.assertEqual(n_queen.solutions, 0)
+        self.assertEqual(n_queen.error, "The size isn't a digit")
