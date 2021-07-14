@@ -29,10 +29,10 @@ class TestNQueens(unittest.TestCase):
         self.assertEqual(NQueens(8).solutions, 92)
 
     def test_9_queen(self):
-        self.assertEqual(NQueens(8).solutions, 352)
+        self.assertEqual(NQueens(9).solutions, 352)
 
     def test_10_queen(self):
-        self.assertEqual(NQueens(8).solutions, 724)
+        self.assertEqual(NQueens(10).solutions, 724)
 
     def test_float_size(self):
         n_queen = NQueens(8.5)

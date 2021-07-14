@@ -10,8 +10,8 @@ class NQueens(object):
         self.solve()
 
     def solve(self):
-        positions = [-1] * self.size
         if self.is_size_digit():
+            positions = [-1] * self.size
             self.put_queen(positions, 0)
         else:
             self.error = "The size isn't a digit"
